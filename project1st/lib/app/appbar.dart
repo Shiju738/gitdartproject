@@ -50,7 +50,7 @@ class NestedScrollViewExample extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Scrollbar(
-        child: Column(
+        child: ListView(
           children: [
             Row(
               children: [
