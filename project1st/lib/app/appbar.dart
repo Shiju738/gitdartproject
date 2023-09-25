@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1st/app/page.dart';
 
 class Sample extends StatelessWidget {
   const Sample({super.key});
@@ -54,100 +55,250 @@ class NestedScrollViewExample extends StatelessWidget {
           children: [
             Row(
               children: [
-                Expanded(
-                  child: Container(
-                    alignment: Alignment.center,
-                    height: 60,
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black12)),
-                    child: const Text(
-                      "Refine Products",
-                      style: TextStyle(fontSize: 20),
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-                Expanded(
-                  child: Container(
-                    alignment: Alignment.center,
-                    height: 60,
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black12)),
-                    child: const Text(
-                      "Sort By Newst",
-                      style: TextStyle(fontSize: 20),
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ],
             ),
-            const Row(
+            Row(
               children: [
-                Expanded(
-                  child: Card(
-                    elevation: .5,
-                    // shadowColor: Colors.green,
-                    child: Image(
-                      image: AssetImage(
-                        'image/4125F_6000_main2-removebg-preview.jpg',
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-                Expanded(
-                  child: Card(
-                    elevation: .5,
-                    child: Image(
-                        image: AssetImage(
-                            'image/4125F_6000_main2-removebg-preview.jpg')),
-                  ),
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
-            const Row(
+            Row(
               children: [
-                Expanded(
-                  child: Card(
-                    elevation: .5,
-                    child: Image(
-                      image: AssetImage(
-                        'image/4125F_6000_main2-removebg-preview.jpg',
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-                Expanded(
-                  child: Card(
-                    elevation: .5,
-                    shadowColor: Colors.black,
-                    child: Image(
-                        image: AssetImage(
-                            'image/4125F_6000_main2-removebg-preview.jpg')),
-                  ),
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
-            const Row(
+            Row(
               children: [
-                Expanded(
-                  child: Card(
-                    elevation: .5,
-                    child: Image(
-                      image: AssetImage(
-                        'image/4125F_6000_main2-removebg-preview.jpg',
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-                Expanded(
-                  child: Card(
-                    elevation: .5,
-                    shadowColor: Colors.black,
-                    child: Image(
-                        image: AssetImage(
-                            'image/4125F_6000_main2-removebg-preview.jpg')),
-                  ),
+                 Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              child: Image(
+                                image: AssetImage(
+                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                              ),
+                            ),
+                            Text('COMMON PROJECTS'),
+                            Text('Orginal Achilies low Snekers'),
+                            Text('\$40'),
+                            Text('Pre-Order')
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
             ),
           ],
         ),
