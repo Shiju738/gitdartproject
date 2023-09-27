@@ -38,6 +38,7 @@ class Slide extends StatelessWidget {
           )
         ],
         backgroundColor: Colors.white,
+        elevation: 0,
       ),
       body: const SizedBox(
         child: Column(
@@ -52,7 +53,10 @@ class Slide extends StatelessWidget {
                         'image/4125F_6000_main2-removebg-preview.jpg'),
                   ),
                 ),
-                Text('COMMON PROJECTS'),
+                Text(
+                  'COMMON PROJECTS',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 Text('Orginal Achilies low Snekers'),
                 Text('\$410'),
               ],
@@ -69,7 +73,10 @@ class Slide extends StatelessWidget {
                       padding: EdgeInsets.all(16.0),
                       child: Align(
                         alignment: Alignment.center,
-                        child: Text('COLOR:WHITE'),
+                        child: Text(
+                          'COLOR:WHITE',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ),
@@ -83,12 +90,18 @@ class Slide extends StatelessWidget {
                       padding: EdgeInsets.all(16.0),
                       child: Align(
                         alignment: Alignment.center,
-                        child: Text('SIZE: 41'),
+                        child: Text(
+                          'SIZE: 41',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ),
                 ),
               ],
+            ),
+            Divider(
+              color: Colors.white,
             ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -119,11 +132,11 @@ class Slide extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("DESCRIPTION"),
+                Text(
+                  "DESCRIPTION",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
               ],
-            ),
-            Divider(
-              color: Colors.white,
             ),
             Row(
               children: [
@@ -133,6 +146,7 @@ class Slide extends StatelessWidget {
                     child: Text(
                       "Common projects leather sneakers have gained cult thanks to their minimalist design and construction. This white version is perfect for creating crisp city-smart looks.",
                       textAlign: TextAlign.center,
+                      style: TextStyle(fontWeight: FontWeight.w400),
                     ),
                   ),
                 ),
@@ -150,7 +164,10 @@ class Slide extends StatelessWidget {
                     padding: EdgeInsets.all(15.0),
                     child: Align(
                       alignment: Alignment.center,
-                      child: Text('SIZE & FIT'),
+                      child: Text(
+                        'SIZE & FIT',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
@@ -168,7 +185,10 @@ class Slide extends StatelessWidget {
                     padding: EdgeInsets.all(15.0),
                     child: Align(
                       alignment: Alignment.center,
-                      child: Text('DETAILS & CARE'),
+                      child: Text(
+                        'DETAILS & CARE',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
