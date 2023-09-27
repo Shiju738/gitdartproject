@@ -57,6 +57,7 @@ class Slide extends StatelessWidget {
                 Text('\$410'),
               ],
             ),
+            Divider(color: Colors.white),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -112,11 +113,17 @@ class Slide extends StatelessWidget {
                 ),
               ],
             ),
+            Divider(
+              color: Colors.white,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("DESCRIPTION"),
               ],
+            ),
+            Divider(
+              color: Colors.white,
             ),
             Row(
               children: [
@@ -128,9 +135,45 @@ class Slide extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                )
+                ),
               ],
-            )
+            ),
+            Divider(
+              color: Colors.black,
+              endIndent: 10,
+              indent: 10,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text('SIZE & FIT'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Divider(
+              color: Colors.black,
+              indent: 10,
+              endIndent: 10,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text('DETAILS & CARE'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
