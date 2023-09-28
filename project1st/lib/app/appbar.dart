@@ -97,9 +97,11 @@ class NestedScrollViewExample extends StatelessWidget {
                         child: Column(
                           children: [
                             Card(
+                              color: Colors.white70,
                               child: Image(
                                 image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                                  'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png',
+                                ),
                               ),
                             ),
                             Text(
@@ -136,91 +138,10 @@ class NestedScrollViewExample extends StatelessWidget {
                         child: Column(
                           children: [
                             Card(
+                              color: Colors.white70,
                               child: Image(
                                 image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
-                              ),
-                            ),
-                            Text(
-                              'COMMON PROJECTS',
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            ),
-                            Text('Orginal Achilies low Snekers'),
-                            Divider(
-                              color: Colors.white,
-                            ),
-                            Text('\$40'),
-                            Text(
-                              'Pre-Order',
-                              style: TextStyle(color: Colors.black38),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Slide()));
-                      },
-                      child: const SizedBox(
-                        width: 200,
-                        child: Column(
-                          children: [
-                            Card(
-                              child: Image(
-                                image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
-                              ),
-                            ),
-                            Text(
-                              'COMMON PROJECTS',
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            ),
-                            Text('Orginal Achilies low Snekers'),
-                            Divider(
-                              color: Colors.white,
-                            ),
-                            Text('\$40'),
-                            Text(
-                              'Pre-Order',
-                              style: TextStyle(color: Colors.black38),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Slide()));
-                      },
-                      child: const SizedBox(
-                        width: 200,
-                        child: Column(
-                          children: [
-                            Card(
-                              child: Image(
-                                image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
                               ),
                             ),
                             Text(
@@ -261,9 +182,10 @@ class NestedScrollViewExample extends StatelessWidget {
                         child: Column(
                           children: [
                             Card(
+                              color: Colors.white70,
                               child: Image(
                                 image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
                               ),
                             ),
                             Text(
@@ -300,9 +222,10 @@ class NestedScrollViewExample extends StatelessWidget {
                         child: Column(
                           children: [
                             Card(
+                              color: Colors.white70,
                               child: Image(
                                 image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
                               ),
                             ),
                             Text(
@@ -343,9 +266,10 @@ class NestedScrollViewExample extends StatelessWidget {
                         child: Column(
                           children: [
                             Card(
+                              color: Colors.white70,
                               child: Image(
                                 image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
                               ),
                             ),
                             Text(
@@ -382,9 +306,94 @@ class NestedScrollViewExample extends StatelessWidget {
                         child: Column(
                           children: [
                             Card(
+                              color: Colors.white70,
                               child: Image(
                                 image: AssetImage(
-                                    'image/4125F_6000_main2-removebg-preview.jpg'),
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
+                              ),
+                            ),
+                            Text(
+                              'COMMON PROJECTS',
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                            Text('Orginal Achilies low Snekers'),
+                            Divider(
+                              color: Colors.white,
+                            ),
+                            Text('\$40'),
+                            Text(
+                              'Pre-Order',
+                              style: TextStyle(color: Colors.black38),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              color: Colors.white70,
+                              child: Image(
+                                image: AssetImage(
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
+                              ),
+                            ),
+                            Text(
+                              'COMMON PROJECTS',
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                            Text('Orginal Achilies low Snekers'),
+                            Divider(
+                              color: Colors.white,
+                            ),
+                            Text('\$40'),
+                            Text(
+                              'Pre-Order',
+                              style: TextStyle(color: Colors.black38),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Slide()));
+                      },
+                      child: const SizedBox(
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Card(
+                              color: Colors.white70,
+                              child: Image(
+                                image: AssetImage(
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
                               ),
                             ),
                             Text(

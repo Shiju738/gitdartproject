@@ -45,12 +45,13 @@ class Slide extends StatelessWidget {
           children: [
             Column(
               children: [
-                Align(
+                Card(
+                  color: Colors.white70,
                   child: Image(
-                    height: 350,
+                    height: 300,
                     width: 400,
                     image: AssetImage(
-                        'image/4125F_6000_main2-removebg-preview.jpg'),
+                        'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
                   ),
                 ),
                 Text(
@@ -138,6 +139,9 @@ class Slide extends StatelessWidget {
                 ),
               ],
             ),
+            Divider(
+              color: Colors.white,
+            ),
             Row(
               children: [
                 Expanded(
@@ -153,9 +157,10 @@ class Slide extends StatelessWidget {
               ],
             ),
             Divider(
-              color: Colors.black,
+              color: Colors.black26,
               endIndent: 10,
               indent: 10,
+              height: 40,
             ),
             Row(
               children: [
@@ -174,7 +179,7 @@ class Slide extends StatelessWidget {
               ],
             ),
             Divider(
-              color: Colors.black,
+              color: Colors.black26,
               indent: 10,
               endIndent: 10,
             ),
@@ -182,7 +187,7 @@ class Slide extends StatelessWidget {
               children: [
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsets.all(15.0),
+                    padding: EdgeInsets.all(10.0),
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
