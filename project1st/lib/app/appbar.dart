@@ -22,64 +22,69 @@ class NestedScrollViewExample extends StatelessWidget {
           "COMMON PROJECTS",
           style: TextStyle(color: Colors.black),
         ),
-        centerTitle: true,
-        leading: const SafeArea(
-          child: Row(
-            children: [
-              Icon(
-                Icons.menu,
-                color: Colors.black,
-              ),
-              Spacer(),
-              Icon(
-                Icons.search,
-                color: Colors.black,
-              ),
-            ],
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(
+              Icons.looks_two_outlined,
+              color: Colors.black,
+            ),
+            tooltip: 'Comment Icon',
+            onPressed: () {},
           ),
-        ),
-        actions: const [
-          Icon(
-            Icons.looks_two_outlined,
-            color: Colors.black,
+          IconButton(
+            icon: const Icon(
+              Icons.checkroom_sharp,
+              color: Colors.black,
+            ),
+            tooltip: 'Setting Icon',
+            onPressed: () {},
           ),
-          Icon(
-            Icons.checkroom_sharp,
-            color: Colors.black,
-          )
         ],
         backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.black,
+          ),
+          tooltip: 'Menu Icon',
+          onPressed: () {},
+        ),
       ),
       body: Scrollbar(
         child: ListView(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    alignment: Alignment.center,
-                    height: 60,
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black12)),
-                    child: const Text(
-                      "Refine Products",
-                      style: TextStyle(fontSize: 20),
+            Container(
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      alignment: Alignment.center,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black12),
+                      ),
+                      child: const Text(
+                        "Refine Products",
+                        style: TextStyle(fontSize: 20),
+                      ),
                     ),
                   ),
-                ),
-                Expanded(
-                  child: Container(
-                    alignment: Alignment.center,
-                    height: 60,
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black12)),
-                    child: const Text(
-                      "Sort By Newst",
-                      style: TextStyle(fontSize: 20),
+                  Expanded(
+                    child: Container(
+                      alignment: Alignment.center,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black12),
+                      ),
+                      child: const Text(
+                        "Sort By Newst",
+                        style: TextStyle(fontSize: 20),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Row(
               children: [
@@ -133,32 +138,38 @@ class NestedScrollViewExample extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => const Slide()));
                       },
-                      child: const SizedBox(
-                        width: 200,
-                        child: Column(
-                          children: [
-                            Card(
-                              color: Colors.white70,
-                              child: Image(
-                                image: AssetImage(
-                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png'),
+                      child: const Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        child: SizedBox(
+                          width: 200,
+                          child: Column(
+                            children: [
+                              Card(
+                                color: Colors.white70,
+                                child: Image(
+                                  image: AssetImage(
+                                    'image/men-555-black-fashion-lace-up-shoes-500x500-removebg-preview.png',
+                                  ),
+                                ),
                               ),
-                            ),
-                            Text(
-                              'COMMON PROJECTS',
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            ),
-                            Text('Orginal Achilies low Snekers'),
-                            Divider(
-                              color: Colors.white,
-                            ),
-                            Text('\$40'),
-                            Text(
-                              'Pre-Order',
-                              style: TextStyle(color: Colors.black38),
-                            )
-                          ],
+                              Text(
+                                'COMMON PROJECTS',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text('Orginal Achilies low Snekers'),
+                              Divider(
+                                color: Colors.white,
+                              ),
+                              Text('\$40'),
+                              Text(
+                                'Pre-Order',
+                                style: TextStyle(color: Colors.black38),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),

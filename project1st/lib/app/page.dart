@@ -5,40 +5,41 @@ class Slide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       appBar: AppBar(
         title: const Text(
           "COMMON PROJECTS",
           style: TextStyle(color: Colors.black),
         ),
-        centerTitle: true,
-        leading: const SafeArea(
-          child: Row(
-            children: [
-              Icon(
-                Icons.menu,
-                color: Colors.black,
-              ),
-              Spacer(),
-              Icon(
-                Icons.search,
-                color: Colors.black,
-              ),
-            ],
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(
+              Icons.looks_two_outlined,
+              color: Colors.black,
+            ),
+            tooltip: 'Comment Icon',
+            onPressed: () {},
           ),
-        ),
-        actions: const [
-          Icon(
-            Icons.looks_two_outlined,
-            color: Colors.black,
+          IconButton(
+            icon: const Icon(
+              Icons.checkroom_sharp,
+              color: Colors.black,
+            ),
+            tooltip: 'Setting Icon',
+            onPressed: () {},
           ),
-          Icon(
-            Icons.checkroom_sharp,
-            color: Colors.black,
-          )
         ],
         backgroundColor: Colors.white,
-        elevation: 0,
+        elevation: 50.0,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.black,
+          ),
+          tooltip: 'Menu Icon',
+          onPressed: () {},
+        ),
       ),
       body: const SizedBox(
         child: Column(
@@ -202,6 +203,6 @@ class Slide extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
