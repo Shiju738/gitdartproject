@@ -49,43 +49,38 @@ class NestedScrollViewExample extends StatelessWidget {
           tooltip: 'Menu Icon',
           onPressed: () {},
         ),
+        bottom: AppBar(backgroundColor: Colors.white, actions: [
+          Expanded(
+            child: Container(
+              alignment: Alignment.center,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black12),
+              ),
+              child: const Text(
+                "Refine Products",
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              alignment: Alignment.center,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black12),
+              ),
+              child: const Text(
+                "Sort By Newst",
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+          ),
+        ]),
       ),
       body: Scrollbar(
         child: ListView(
           children: [
-            Container(
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      alignment: Alignment.center,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black12),
-                      ),
-                      child: const Text(
-                        "Refine Products",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      alignment: Alignment.center,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black12),
-                      ),
-                      child: const Text(
-                        "Sort By Newst",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
             Row(
               children: [
                 Column(
